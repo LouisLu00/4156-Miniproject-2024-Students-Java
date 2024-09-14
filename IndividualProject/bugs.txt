@@ -82,3 +82,14 @@ Location: RouteController.java, method (findCourseTime)
 Description: The method returned a static string "some time" instead of dynamically returns the time for the course.
 Fix: Change "Some time" to requestedCourse.getCourseTimeSlot(), which can correctly get the course time slot
 
+Bug 14:
+Issue: Wrong Initialization Logic
+Location: Course.java, method (Course)
+Description: The default enrolled student count is set to 500.
+Fix: Changed 500 to 0, to correctly initialize a course.
+
+Bug 15:
+Issue: Incomplete Logic
+Location: Course.java, method (EnrollStudent)
+Description: The method doesn't check whether the course if full before enrolling the student.
+Fix: Added if statement to check logic to check whether the course is full.

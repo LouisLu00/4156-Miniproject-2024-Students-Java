@@ -58,7 +58,7 @@ public class DepartmentUnitTests {
 
   @Test
   public void toStringTest(){
-    String expectedResult = "COMS 1004: Adam Cannon, 417 IAB, 11:40-12:55, Max Capacity: 400, Enrolled: 249\n";
+    String expectedResult = "COMS 1004: \nInstructor: Adam Cannon; Location: 417 IAB; Time: 11:40-12:55\n";
     assertEquals(expectedResult, testDepartment.toString());
   }
 
@@ -68,8 +68,8 @@ public class DepartmentUnitTests {
     Course coms4156 = new Course("Gail Kaiser", "501 NWC", "10:10-11:25", 120);
     coms4156.setEnrolledStudentCount(109);
     testDepartment.addCourse("4156", coms4156);
-    String expectedResult =  "COMS 1004: Adam Cannon, 417 IAB, 11:40-12:55, Max Capacity: 400, Enrolled: 249\n" +
-            "COMS 4156: Gail Kaiser, 501 NWC, 10:10-11:25, Max Capacity: 120, Enrolled: 109\n";
+    String expectedResult =  "COMS 1004: \nInstructor: Adam Cannon; Location: 417 IAB; Time: 11:40-12:55\n" +
+            "COMS 4156: \nInstructor: Gail Kaiser; Location: 501 NWC; Time: 10:10-11:25\n";
 
     assertEquals(testDepartment.toString(), expectedResult);
   }

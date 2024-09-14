@@ -87,7 +87,7 @@ public class CourseUnitTests {
   @Test
   public void reassignTimeTest() {
     testCourse.reassignTime("Midnight");
-    assertEquals(testCourse.getCourseLocation(), "Midnight");
+    assertEquals(testCourse.getCourseTimeSlot(), "Midnight");
   }
 
   @Test
