@@ -35,7 +35,7 @@ public class Course implements Serializable {
     if (!isCourseFull()) {
       enrolledStudentCount++;
       return true;
-    };
+    }
     return false;
   }
 
