@@ -1,0 +1,32 @@
+Source 1: Instructions about using PMD for static bug analyzing 
+https://jxausea.medium.com/spring-boot-integration-pmd-plugin-quick-start-demo-a1353113b910
+
+Source 2: Integration PMD plugin
+https://jxausea.medium.com/spring-boot-integration-pmd-plugin-quick-start-demo-a1353113b910
+
+Source 3: Mockmvc page about using MockMVC to test RESTful APIs
+https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework.html
+
+Source 4: Youtube video on using MockMVC to test RESTful APIs
+https://www.youtube.com/watch?v=Aasp0mWT3Ac
+
+Source 5: Jetbrain Official Documentation on how to set JDK for project
+https://intellij-support.jetbrains.com/hc/en-us/articles/206544879-Selecting-the-JDK-version-the-IDE-will-run-under
+
+Source 6: Jetbrain Official Documentation on set indentation settings in Intellj
+https://www.jetbrains.com/help/idea/indentation.html
+
+Source 7: Test in SpringBoot
+https://spring.io/guides/gs/testing-web
+
+Source 8: Medium Post about Testing in SpringBoot
+https://medium.com/@Lakshitha_Fernando/spring-boot-unit-testing-for-repositories-controllers-and-services-using-junit-5-and-mockito-def3ff5891be
+
+Source 9: Post about difference between before all and before each
+https://www.baeldung.com/junit-before-beforeclass-beforeeach-beforeall
+
+Source 10: Introduction on how to perform Github push in command line 
+https://www.freecodecamp.org/news/git-push-local-branch-to-remote-how-to-publish-a-new-branch-in-git/
+
+Source 11: Intro to Jacoco Report Meaning
+https://www.baeldung.com/jacoco#:~:text=JaCoCo%20reports%20help%20us%20visually,branches%20have%20not%20been%20exercised.
