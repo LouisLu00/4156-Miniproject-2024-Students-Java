@@ -1,0 +1,95 @@
+Bug 1:
+Issue: wrong return value
+Location: Course.java, method (getCourseLocation)
+Description: The return value for the getCourseLocation is incorrect. It returned the instructor name instead of course
+location.
+Fix: Changed the return value to course location.
+
+Bug 2:
+Issue: Wrong return value
+Location: Course.java, method (getInstructorName)
+Description: The return value for the getInstructorName is incorrect. It returned the course location instead of
+instructor name.
+Fix: Changed the return value to instructor name.
+
+Bug 3:
+Issue: Wrong return value
+Location: Department.java, method (getNumberOfMajor)
+Description: The return value for the getNumberOfMajors is incorrect. It returned the negative value of the number of majors.
+Fix: Removed the negative sign
+
+Bug 4:
+Issue: Wrong return value
+Location: Department.java, method (getDepartmentChair)
+Description: The return value for the getDepartmentChair is incorrect. It returned the static string "this.departmentChair".
+Fix: Removed the double quotation mark
+
+Bug 5:
+Issue: Incomplete logic
+Location: Department.java, method (dropPersonFromMajor)
+Description: The method doesn't check the number of majors before drop one.
+Fix; Added the if statement to check before dropping student
+
+Bug 6:
+Issue: Wrong return value
+Location: Department.java, method (toString)
+Description: The return value for the getDepartmentChair is incorrect. It returned the static string "result.toString()".
+Fix: Removed the double quotation mark
+
+Bug 7:
+Issue: Incomplete Logic
+Location: Course.java, method (dropStudent)
+Description: The method doesn't check if the enrolled student count before drop the students.
+Fix: Added if condition to check if there is at least 1 student in the course. And returned based on whether the
+student has been successfully dropped.
+
+Bug 8:
+Issue: Wrong Logic
+Location: Course.java, method (isCourseFull)
+Description: The method returned the opposite boolean value.
+Fix: Changed the return logic to correctly check whether the course is full.
+
+Bug 9:
+Issue: Wrong HTTP Status Code
+Location: RouteController.java, method (retrieveDepartment)
+Description: Method returned wrong HTTP status code. It returned status 404 when the Department has been found. And
+it returned status 200 when the department is not found.
+Fix: Interchange the status codes, so the returned status correctly reflected the API result.
+
+
+Bug 10:
+Issue: Wrong HTTP Status Code
+Location: RouteController.java, method (retrieveCourse)
+Description: Wrong status code (403 - Forbidden) returned when the Course are not found.
+Fix: Changed returned status code from 403 Forbidden to 404 Not Found.
+
+Bug 11:
+Issue: Wrong Returned Value
+Location: RouteController.java, method (getMajorCtFromDept)
+Description: There is a incorrect minus sign before the deptCode in the returned String.
+Fix: Removed unnecessary minus sign to return the correct value.
+
+
+Bug 12:
+Issue: Wrong HTTP Status Code
+Location: RouteController.java, method (getMajorCtFromDept)
+Description: Wrong status code (403 - Forbidden) returned when the Department are not found.
+Fix: Changed returned status code from 403 Forbidden to 404 Not Found.
+
+Bug 13:
+Issue: Wrong Returned Value
+Location: RouteController.java, method (findCourseTime)
+Description: The method returned a static string "some time" instead of dynamically returns the time for the course.
+Fix: Change "Some time" to requestedCourse.getCourseTimeSlot(), which can correctly get the course time slot
+
+Bug 14:
+Issue: Wrong Initialization Logic
+Location: Course.java, method (Course)
+Description: The default enrolled student count is set to 500.
+Fix: Changed 500 to 0, to correctly initialize a course.
+
+Bug 15:
+Issue: Incomplete Logic
+Location: Course.java, method (EnrollStudent)
+Description: The method doesn't check whether the course if full before enrolling the student.
+Fix: Added if statement to check logic to check whether the course is full.

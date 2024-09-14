@@ -137,10 +137,10 @@ public class RouterControllerUnitTests {
   @Test
   public void getMajorCountFromDeptTest() throws Exception {
     mockMvc.perform(get("/getMajorCountFromDept")
-                    .param("deptCode", "PSYC")
+                    .param("deptCode", "COMS")
             )
             .andExpect(status().isOk())
-            .andExpect(content().string("There are: 437 majors in the department"));
+            .andExpect(content().string("There are: 2700 majors in the department"));
   }
 
   @Test
